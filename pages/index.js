@@ -43,6 +43,7 @@ export default function Home({ git, project }) {
             @{git.login}
           </Text>
           <Text>{git.bio}</Text>
+          <br/>
           <Flex px="20" gap="14px">
             <a href="https://drive.google.com/file/d/1ah7a1cotcmOdPCiiUR-GtJnQJWep75HT/view?usp=share_link">
               <Button px="8" colorScheme="green" borderRadius="20px">
@@ -55,6 +56,7 @@ export default function Home({ git, project }) {
               </Button>
             </a>
           </Flex>
+          <br/>
           <Grid templateColumns="repeat(3, 1fr)" gap={2} padding="5px">
             <Button backgroundColor="lightGrey" p="5">
               TYPESCRIPT
@@ -78,9 +80,20 @@ export default function Home({ git, project }) {
               REACT.JS
             </Button>
           </Grid>
+         <br/>
           <Flex gap="2" align="center">
             <GrMapLocation /> <Text>{git.location}</Text>
           </Flex>
+          <br/>
+          <Grid templateColumns="repeat(1, 1fr)" gap={2} padding="5px">
+            <Text fontSize="22px" fontWeight="600">Experience & Education</Text>
+            <Text backgroundColor="lightGrey" p="5">
+              Full Stack Develooment, Masai School, Bengaluru
+            </Text>{" "}
+            <Text backgroundColor="lightGrey" padding="5px">
+              B.A (Hons) University of Delhi
+            </Text>{" "}
+          </Grid>
         </Box>
       </Flex>
       <Box paddingRight="30px" w="70%" border="0px">
