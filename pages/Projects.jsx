@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Heading, Grid, Flex } from "@chakra-ui/react";
-import {  GrLanguage } from "react-icons/gr";
+import { GrLanguage } from "react-icons/gr";
 import { FcLikePlaceholder } from "react-icons/fc";
 import { BiGitRepoForked } from "react-icons/bi";
 
@@ -8,7 +8,7 @@ const Projects = ({ project }) => {
   return (
     <div style={{}}>
       <Box ml="20px">
-        <Heading textAlign="center" color="gray">
+        <Heading textAlign="center" color="blue">
           Projects
         </Heading>
         <Box>
@@ -41,7 +41,6 @@ const Projects = ({ project }) => {
                       </Box>
                       <Box>
                         <Text gap="3px" alignItems="center" display="flex">
-                       
                           <GrLanguage /> {item.language}
                         </Text>
                       </Box>

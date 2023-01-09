@@ -70,7 +70,7 @@ export default function Home({ git, project }) {
         </Box>
       </Flex>
       <Box w="70%" border="0px">
-        <Heading textAlign="center" color="gray">
+        <Heading textAlign="center" color="green">
           Projects
         </Heading>
         <Box>
