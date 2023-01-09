@@ -12,8 +12,7 @@ import { FcLikePlaceholder } from "react-icons/fc";
 import { BiGitRepoForked } from "react-icons/bi";
 
 export default function Home({ git, project }) {
-  console.log(git);
-  console.log(project);
+ 
   return (
     <Box width="100%" display="flex" gap="8px">
       <Flex
