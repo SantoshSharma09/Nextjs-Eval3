@@ -36,7 +36,7 @@ export default function Home({ git, project }) {
             src={git.avatar_url}
             width="100"
             height="100"
-            alt="adityaBr11"
+            alt="sanpic"
           />
           <Text fontSize="2xl">{git.name}</Text>
           <Text color="gray.500" fontSize="sm">
