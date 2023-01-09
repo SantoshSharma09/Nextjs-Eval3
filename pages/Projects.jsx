@@ -6,7 +6,7 @@ import { BiGitRepoForked } from "react-icons/bi";
 
 const Projects = ({ project }) => {
   return (
-    <div style={{}}>
+    <div style={{ backgroundColor: "teal", paddingRight: "30px" }}>
       <Box ml="20px">
         <Heading textAlign="center" color="blue">
           Projects
@@ -17,6 +17,7 @@ const Projects = ({ project }) => {
               <Box
                 key={item.id}
                 mt="20px"
+                backgroundColor="white"
                 style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
               >
                 <a href={item.svn_url}>

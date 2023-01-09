@@ -12,9 +12,8 @@ import { FcLikePlaceholder } from "react-icons/fc";
 import { BiGitRepoForked } from "react-icons/bi";
 
 export default function Home({ git, project }) {
- 
   return (
-    <Box width="100%" display="flex" gap="8px">
+    <Box width="100%" display="flex" gap="8px" backgroundColor="teal">
       <Flex
         textAlign="center"
         border="0px"
@@ -24,6 +23,7 @@ export default function Home({ git, project }) {
         px="5"
         align="center"
         shadow="2xl"
+        backgroundColor="white"
       >
         <Box>
           <Image
@@ -52,24 +52,35 @@ export default function Home({ git, project }) {
             </Button>
           </Flex>
           <Grid templateColumns="repeat(3, 1fr)" gap={2} padding="5px">
-            <Button p="5">TYPESCRIPT</Button>{" "}
-            <Button padding="5px">NODE.JS</Button>{" "}
-            <Button padding="5px">MONGODB</Button>
-            <Button p="5">REACTNATIVE</Button>
-            <Button p="5">TAILWIND</Button>
-            <Button p="5">CHAKRA-UI</Button>
-            <Button p="5">CSS</Button>
-            <Button p="5">GIT</Button>
-            <Button p="5">REACT.JS</Button>
+            <Button backgroundColor="lightGrey" p="5">
+              TYPESCRIPT
+            </Button>{" "}
+            <Button backgroundColor="lightGrey" padding="5px">
+              NODE.JS
+            </Button>{" "}
+            <Button backgroundColor="lightGrey" padding="5px">
+              MONGODB
+            </Button>
+            <Button backgroundColor="lightGrey" p="5">
+              CHAKRA-UI
+            </Button>
+            <Button backgroundColor="lightGrey" p="5">
+              CSS
+            </Button>
+            <Button backgroundColor="lightGrey" p="5">
+              GIT
+            </Button>
+            <Button backgroundColor="lightGrey" p="5">
+              REACT.JS
+            </Button>
           </Grid>
           <Flex gap="2" align="center">
-            {" "}
             <GrMapLocation /> <Text>{git.location}</Text>
           </Flex>
         </Box>
       </Flex>
-      <Box w="70%" border="0px">
-        <Heading textAlign="center" color="green">
+      <Box paddingRight="30px" w="70%" border="0px">
+        <Heading textAlign="center" color="white">
           Projects
         </Heading>
         <Box>
@@ -81,7 +92,7 @@ export default function Home({ git, project }) {
                 style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
               >
                 <a href={item.svn_url}>
-                  <Box ml="10px" p="2">
+                  <Box ml="10px" p="2" backgroundColor="white">
                     <Text>{item.name}</Text>
                     <Text color="gray.600" fontSize="sm">
                       {item.full_name}
