@@ -44,12 +44,16 @@ export default function Home({ git, project }) {
           </Text>
           <Text>{git.bio}</Text>
           <Flex px="20" gap="14px">
-            <Button px="8" colorScheme="green" borderRadius="20px">
-              Resume
-            </Button>
-            <Button px="8" colorScheme="blue" borderRadius="20px">
-              follow
-            </Button>
+            <a href="https://drive.google.com/file/d/1ah7a1cotcmOdPCiiUR-GtJnQJWep75HT/view?usp=share_link">
+              <Button px="8" colorScheme="green" borderRadius="20px">
+                Resume
+              </Button>
+            </a>
+            <a href="https://github.com/SantoshSharma09">
+              <Button px="8" colorScheme="blue" borderRadius="20px">
+                Follow
+              </Button>
+            </a>
           </Flex>
           <Grid templateColumns="repeat(3, 1fr)" gap={2} padding="5px">
             <Button backgroundColor="lightGrey" p="5">
